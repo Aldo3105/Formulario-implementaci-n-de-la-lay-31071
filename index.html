@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Registro de funcionarios de gobiernos locales interesados en asistencia técnica para implementar la Ley N° 31071." />
+    <meta name="referrer" content="no-referrer" />
+    <title>Registro de municipalidades interesadas | Ley N° 31071</title>
+    <link rel="stylesheet" href="registro.css" />
+    <script src="registro.js" defer></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container brand">
+        <span class="brand-mark" aria-hidden="true">31071</span>
+        <div>
+          <strong>Ruta Ley N° 31071</strong>
+          <span>Compras públicas a la agricultura familiar</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section aria-labelledby="registration-title">
+        <div class="intro">
+          <p class="eyebrow">Asistencia técnica a gobiernos locales</p>
+          <h1 id="registration-title">Registro de municipalidades interesadas</h1>
+          <p>Registre sus datos y la fase en la que se encuentra su municipalidad para solicitar asistencia técnica en la implementación de la Ley N° 31071.</p>
+          <p class="privacy-note">La información se utilizará para el seguimiento de su solicitud y para contactarlo. Los registros no se muestran en esta página.</p>
+        </div>
+
+        <noscript><p class="status error">Active JavaScript en su navegador para enviar el formulario.</p></noscript>
+
+        <form id="assistanceForm" class="registration-form">
+          <p class="required-note">Los campos con <span aria-hidden="true">*</span> son obligatorios.</p>
+          <fieldset>
+            <legend>Datos del funcionario</legend>
+            <div class="field-grid">
+              <label for="nombre">Nombre y apellido <span aria-hidden="true">*</span>
+                <input id="nombre" name="nombre" required autocomplete="name" maxlength="200" />
+              </label>
+              <label for="cargo">Cargo <span aria-hidden="true">*</span>
+                <input id="cargo" name="cargo" required autocomplete="organization-title" maxlength="200" placeholder="Ej.: Gerente de Desarrollo Económico" />
+              </label>
+              <label for="correo">Correo de contacto <span aria-hidden="true">*</span>
+                <input id="correo" name="correo" type="email" required autocomplete="email" maxlength="254" />
+              </label>
+              <label for="telefono">Teléfono <span class="optional">(opcional)</span>
+                <input id="telefono" name="telefono" type="tel" autocomplete="tel" maxlength="30" placeholder="Ej.: +51 999 999 999" />
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Municipalidad</legend>
+            <div class="field-grid territory-grid">
+              <label for="municipalidad" class="full-width">Nombre de la municipalidad <span aria-hidden="true">*</span>
+                <input id="municipalidad" name="municipalidad" required autocomplete="organization" maxlength="250" placeholder="Ej.: Municipalidad Distrital de Bellavista de la Unión" />
+              </label>
+              <label for="region">Región <span aria-hidden="true">*</span>
+                <input id="region" name="region" required maxlength="100" placeholder="Ej.: Piura" />
+              </label>
+              <label for="provincia">Provincia <span aria-hidden="true">*</span>
+                <input id="provincia" name="provincia" required maxlength="100" placeholder="Ej.: Sechura" />
+              </label>
+              <label for="distrito">Distrito <span aria-hidden="true">*</span>
+                <input id="distrito" name="distrito" required maxlength="100" placeholder="Ej.: Bellavista de la Unión" />
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Implementación y asistencia</legend>
+            <div class="field-grid">
+              <label for="fase" class="full-width">Fase en la que se encuentra <span aria-hidden="true">*</span>
+                <select id="fase" name="fase" required>
+                  <option value="">Seleccione una fase</option>
+                  <option>Fase previa - fortalecimiento</option>
+                  <option>Fase 0 - decisión política</option>
+                  <option>Fase 1 - COMPRAGRO</option>
+                  <option>Fase 2 - planificación</option>
+                  <option>Fase 3 - requerimiento y precio</option>
+                  <option>Fase 4A - compra menor</option>
+                  <option>Fase 4B - compra mayor</option>
+                  <option>Fase 5 - ejecución y pago</option>
+                  <option>Fase 6 - reporte semestral</option>
+                </select>
+              </label>
+              <label for="necesidad" class="full-width">Necesidad de asistencia <span class="optional">(opcional)</span>
+                <textarea id="necesidad" name="necesidad" rows="4" maxlength="4000" placeholder="Describa brevemente su consulta o la dificultad para avanzar."></textarea>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="submit-row">
+            <button type="submit" id="submitButton">Registrar solicitud</button>
+            <p id="formStatus" class="status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1"></p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="footer-logos" aria-label="Proyecto e instituciones">
+          <img class="midagri-logo" src="assets/midagri-logo-cropped.png" width="230" height="76" alt="Ministerio de Desarrollo Agrario y Riego" />
+          <img class="project-logo" src="assets/trinomio-sechura-mesa-cropped.png" width="720" height="100" alt="Compartiendo la Mesa, Programa Mundial de Alimentos y FOSPIBAY" />
+        </div>
+        <div class="footer-contact">
+          <span>Contacto: Ing. Aldo Enrique Pazos Zavaleta</span>
+          <a href="mailto:ald.3105@gmail.com">ald.3105@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
